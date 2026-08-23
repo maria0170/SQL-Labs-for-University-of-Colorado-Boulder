@@ -1,0 +1,4 @@
+-- List the customerid, companyname, and country for all customers NOT in the U.S.A.
+select customerid, contactname, country 
+from customers
+where not country = ‘USA’; 
