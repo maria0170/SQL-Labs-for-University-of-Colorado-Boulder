@@ -1,0 +1,10 @@
+/*
+
+List the orderid,  customerid, and shippeddate for orders that shipped 
+to Canada  in December 1996 through the end of January 1997.
+
+*/ 
+
+select orderid, customerid, shippeddate
+from orders
+where (shipcountry = 'Canada') and (shippeddate between '1996-12-01' and '1997-01-30');
