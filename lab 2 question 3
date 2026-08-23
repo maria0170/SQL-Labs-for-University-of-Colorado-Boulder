@@ -1,0 +1,9 @@
+/* 
+
+List the productid, productname, and quantityperunit for all products that come in bottles.   
+
+*/ 
+
+select productid, productname, quantityperunit
+from products
+where quantityperunit like ‘%bottles%’;
