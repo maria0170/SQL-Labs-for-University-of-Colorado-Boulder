@@ -1,0 +1,12 @@
+/* 
+For all products in the Northwinds database, list the productname, unitprice, unitsinstock, 
+and the total value of the inventory of that product as “Total Value” for all 
+products with a Total Value greater than $1000.
+(HINT:  total value = unitsinstock * unitprice) 
+
+*/ 
+
+select productname, unitprice, unitsinstock, 
+unitsinstock * unitprice as “Total Value ”
+from products 
+where unitsinstock * unitprice > 1000; 
